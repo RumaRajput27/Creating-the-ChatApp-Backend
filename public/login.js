@@ -19,6 +19,9 @@ document.getElementById('login-form').addEventListener('submit', async function 
 
         // Find the user by username
         const user = data.find(user => user.username === username && user.password ===password);
+
+        console.log(user);
+        
         if (user) {
             // Verify the password using bcryptjs
 
